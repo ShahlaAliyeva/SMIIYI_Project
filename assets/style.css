@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.header {
+    height: 9em;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.header-item {
+    align-items: center;
+}
+
+.logo-img img {
+    width: 30%;
+}
+
+.user-name {
+    align-items: center;
+}
+
+.user-name h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#navbar {
+    background-color: #012549;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    background-color: #fff;
+    padding: .7em 1.1em;
+    border-radius: 3em;
+}
+
+.nav-link a {
+    color: #012549;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.topnav .icon {
+    font-size: 2em;
+    color: #fff;
+    display: none;
+}
+
+/* Main Section */
+
+#main-section {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#lesson-schedule img,
+#exam-schedule img {
+    width: 100%;
+}
+
+#subject-list {
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+#subject-list .subject-item {
+    background-color: #012549;
+    padding: 1.5em 2.5em 1.5em .8em;
+    height: 20em;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: .4em;
+}
+
+
+#subject-list .row {
+    flex-wrap: nowrap;
+}
+
+#subject-list .subject-item h4 {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+#icon {
+    color: #fff;
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+    font-size: 1.5em;
+}
+
+.accordion {
+    margin-top: 2em;
+}
+
+.card {
+    background-color: #e6eeff;
+}
+
+.card-header .btn:focus {
+    border: none;
+}
+
+.card-header .btn {
+    font-size: 1.2em;
+}
+
+/* #score-table table {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+} */
+
+#headings {
+    background-color: #012549;
+}
+
+/* Display none */
+
+#exam-schedule,
+#subject-list,
+#score-table {
+    display: none;
+}
+
+footer div{
+    background-color: #012549;
+    position: static;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+}
+
+@media only screen and (max-width:992px) {
+    .nav-link a {
+        font-size: 1.1em !important;
+    }
+
+    .nav-link {
+        padding: .9em 1em !important;
+        border-radius: 2em;
+    }
+
+    #subject-list row{
+        flex-wrap: wrap;
+    }
+
+    .user-name h4 {
+        font-size: 1.3em;
+    }
+
+    .header {
+        height: 6em;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .nav-link a {
+        font-size: 1em !important;
+    }
+
+    .nav-link {
+        padding: .4em 1.1em !important;
+        border-radius: 2em;
+        margin-right: 3em;
+    }
+
+    #subject-list row{
+        flex-wrap: wrap;
+    }
+
+    .user-name h4 {
+        font-size: 1.1em;
+    }
+
+    .header {
+        height: 5em;
+    }
+
+    .header-item {
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .nav-link a {
+        font-size: .8em !important;
+    }
+
+    .nav-link {
+        padding: .1em 1.5em !important;
+        border-radius: 2em;
+        text-align: center;
+        margin-right: 1.5em;
+    }
+
+    #subject-list row{
+        flex-wrap: wrap;
+    }
+
+    .user-name h4 {
+        font-size: .8em;
+    }
+
+    .logo-img {
+        display: inline;
+    }
+
+    .header {
+        height: 4em;
+    }
+
+    #subject-list .subject-item {
+        padding: .8em 1em .8em .5em;
+        height: 20em;
+        width: 100% !important;
+        margin: auto 1em 1em 1em;
+    }
+
+    .subject-item h4 {
+        font-size: .5em;
+    }
+
+    .accordion .card {
+        z-index: 5;
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .nav-link a {
+        font-size: .5em !important;
+    }
+
+    .nav-link {
+        padding: .1em 1.2em !important;
+        border-radius: 2em;
+        text-align: center;
+        margin-right: 1.5em;
+    }
+}
